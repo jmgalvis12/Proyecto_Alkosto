@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alkosto Clone</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="header">
+    <img src="assets/logo.png" alt="Logo" class="logo">
+    <nav class="nav-links">
+      <a href="#">Inicio</a>
+      <a href="#">Productos</a>
+      <a href="#">Ofertas</a>
+      <a href="#">Carrito</a>
+      <a href="#">Favoritos</a>
+      <a href="#">Login</a>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section class="banner">
+    <h1>Bienvenido a Alkosto Clone</h1>
+    <p>Encuentra miles de productos a precios increíbles</p>
+    <button class="btn">Ver Ofertas</button>
+  </section>
+
+  <!-- Sección de productos -->
+  <section class="productos">
+    <h2>Productos Destacados</h2>
+    <div class="product-grid" id="product-list">
+      <!-- Los productos se inyectan desde main.js -->
+    </div>
+  </section>
+
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

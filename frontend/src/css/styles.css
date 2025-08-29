@@ -1,0 +1,102 @@
+:root {
+  --color-primary: #FF6600; /* Naranja */
+  --color-secondary: #003366; /* Azul marino */
+  --color-light: #FFFFFF;
+  --color-muted: #F5F5F5;
+  --color-text: #333333;
+}
+
+/* General */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--color-muted);
+  color: var(--color-text);
+}
+
+/* Header */
+.header {
+  background-color: var(--color-secondary);
+  color: var(--color-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.header .logo {
+  height: 40px;
+}
+
+.nav-links a {
+  color: var(--color-light);
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Banner */
+.banner {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: var(--color-light);
+}
+
+.banner h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.banner .btn {
+  padding: 12px 24px;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.banner .btn:hover {
+  background-color: #e65500;
+}
+
+/* Productos */
+.productos {
+  padding: 40px 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background-color: var(--color-light);
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 16px;
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.product-card .price {
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
