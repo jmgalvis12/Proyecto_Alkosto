@@ -2,39 +2,254 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Alkosto Clone</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <!-- Encabezado -->
+  <!-- HEADER -->
   <header class="header">
-    <img src="assets/logo.png" alt="Logo" class="logo">
-    <nav class="nav-links">
-      <a href="#">Inicio</a>
-      <a href="#">Productos</a>
-      <a href="#">Ofertas</a>
-      <a href="#">Carrito</a>
-      <a href="#">Favoritos</a>
-      <a href="#">Login</a>
+    <div class="header-top">
+      <img src="C:\Users\micha\Desktop\proyecto_IG\frontend\src\assets\logo-agosto-header.png" alt="Alkosto Logo" class="logo">
+      <nav class="nav-main">
+        <ul class="nav-list">
+          <li><a href="#">Hiperofertas</a></li>
+          <li><a href="#">Sigue tu pedido</a></li>
+          <li><a href="#">Consulta tu factura</a></li>
+          <li><a href="#">Nuestras tiendas</a></li>
+          <li><a href="#">Catálogo</a></li>
+          <li><a href="#">Ayuda</a></li>
+        </ul>
+        <ul class="nav-user">
+          <li><a href="#">Mi cuenta</a></li>
+          <li><a href="#">Mi carrito</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- BARRA DE CATEGORÍAS -->
+    <nav class="categories-navbar">
+      <ul class="categories-list">
+        <li class="category-item">
+          <a href="#">Celulares</a>
+          <div class="dropdown-menu">
+            <div class="dropdown-column">
+              <h4>Celulares</h4>
+              <ul>
+                <li><a href="#">iPhone</a></li>
+                <li><a href="#">Samsung</a></li>
+                <li><a href="#">Xiaomi</a></li>
+                <li><a href="#">Motorola</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-column">
+              <h4>Capacidad</h4>
+              <ul>
+                <li><a href="#">64 GB</a></li>
+                <li><a href="#">128 GB</a></li>
+                <li><a href="#">256 GB</a></li>
+              </ul>
+            </div>
+            <div class="dropdown-column">
+              <h4>Accesorios</h4>
+              <ul>
+                <li><a href="#">Cables y cargadores</a></li>
+                <li><a href="#">Audífonos</a></li>
+                <li><a href="#">Memorias SD</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="category-item"><a href="#">Computadores</a></li>
+        <li class="category-item"><a href="#">Electrodomésticos</a></li>
+        <li class="category-item"><a href="#">TV</a></li>
+        <li class="category-item"><a href="#">Accesorios</a></li>
+        <li class="category-item"><a href="#">Videojuegos</a></li>
+      </ul>
     </nav>
+
+    <!-- HERO SECTION -->
+<section class="hero">
+  <!-- Imagen principal -->
+  <div class="hero-banner">
+    <img src="https://media.aws.alkomprar.com/ymarketingcolcomercio/Alkosto/2025/agosto-alkosto/home/festejar.webp" 
+         alt="Esto sí que es para festejar">
+  </div>
+
+  <!-- Carrusel de categorías -->
+  <div class="overflow-box">
+    <ul class="categs-ul">
+        <li class="categs-ul__li">
+            <a class="categs-ul__li-link ak-blue-cake " href="/celulares/c/BI_CELU_ALKOS" attr="Celulares">
+                <img alt="celular negro iphone" class="categs-ul__li-link-img" src="https://media.aws.alkomprar.com/ymarketingcolcomercio/Alkosto/2024/agosto-alkosto/home/assets/c-celulares.webp" attr="Celulares">
+                <p class="categs-ul__li-link-p" attr="Celulares">Celulares
+                </p>
+            </a>
+        </li>
+        <li class="categs-ul__li">
+            <a class="categs-ul__li-link ak-yellow-cake " href="/grandes-electrodomesticos" attr="Electro">
+                <img alt="Nevera negra" class="categs-ul__li-link-img" src="https://media.aws.alkomprar.com/ymarketingcolcomercio/Alkosto/2024/home/categs/c-refrigeracion.webp" attr="Electro">
+                <p class="categs-ul__li-link-p" attr="Electro">Electro
+                </p>
+            </a>
+        </li>
+        <li class="categs-ul__li">
+            <a class="categs-ul__li-link ak-pink-cake " href="/computadores-tablet/c/BI_COMP_ALKOS" attr="Computo e impresión">
+                <img alt="Macbook" class="categs-ul__li-link-img" src="https://media.aws.alkomprar.com/ymarketingcolcomercio/Alkosto/2024/agosto-alkosto/home/assets/c-computadores.webp" attr="Computo e impresión">
+                <p class="categs-ul__li-link-p" attr="Computo e impresión">Computo e impresión
+                </p>
+            </a>
+        </li>
+        <li class="categs-ul__li">
+            <a class="categs-ul__li-link ak-green-cake " href="/tv-video/c/BI_TVVI_ALKOS" attr="Televisores">
+                <img alt="Tv pantalla morada" class="categs-ul__li-link-img" src="https://media.aws.alkomprar.com/ymarketingcolcomercio/Alkosto/2024/agosto-alkosto/home/assets/c-televisores.webp" attr="Televisores">
+                <p class="categs-ul__li-link-p" attr="Televisores">Televisores
+                </p>
+            </a>
+        </li>
+        <li class="categs-ul__li">
+            <a class="categs-ul__li-link ak-purple-cake " href="/videojuegos/c/BI_VIJU_ALKOS" attr="Videojuegos">
+                <img alt="Control xbox verde" class="categs-ul__li-link-img" src="https://media.aws.alkomprar.com/ymarketingcolcomercio/Alkosto/2024/agosto-alkosto/home/assets/c-videojuegos.webp" attr="Videojuegos">
+                <p class="categs-ul__li-link-p" attr="Videojuegos">Videojuegos
+                </p>
+            </a>
+        </li>
+        <li class="categs-ul__li"><a class="categs-ul__li-link ak-orange-cake " href="/setup-gamer/c/setup-gamer" attr="Zona Gamer">
+            <img alt="portátil gamer" class="categs-ul__li-link-img" src="https://media.aws.alkomprar.com/ymarketingcolcomercio/Alkosto/2024/setup-gmar/portatiles-gaming-2.webp?22" attr="Zona Gamer">
+            <p class="categs-ul__li-link-p" attr="Zona Gamer">Zona Gamer
+            </p>
+        </a>
+    </li>
+    <li class="categs-ul__li">
+        <a class="categs-ul__li-link ak-blue-cake " href="/casa-inteligente-domotica/c/BI_CAIN_ALKOS" attr="Domótica">
+            <img alt="Cámara inteligente" class="categs-ul__li-link-img" src="https://media.aws.alkomprar.com/ymarketingcolcomercio/Alkosto/2024/agosto-alkosto/home/c-domotica-2.webp" attr="Domótica">
+            <p class="categs-ul__li-link-p" attr="Domótica">Domótica
+            </p>
+        </a>
+    </li>
+    <li class="categs-ul__li">
+        <a class="categs-ul__li-link ak-yellow-cake " href="/pines-virtuales" attr="Pines">
+            <img alt="Streaming" class="categs-ul__li-link-img" src="https://media.aws.alkomprar.com/ymarketingcolcomercio/Alkosto/2024/agosto-alkosto/home/assets/c-tarjetas-pines.webp" attr="Pines">
+            <p class="categs-ul__li-link-p" attr="Pines">Pines</p>
+        </a>
+    </li>
+    <li class="categs-ul__li">
+        <a class="categs-ul__li-link ak-pink-cake " href="/audio/c/BI_AUDI_ALKOS" attr="Audio">
+            <img alt="Parlante" class="categs-ul__li-link-img" src="https://media.aws.alkomprar.com/ymarketingcolcomercio/Alkosto/2024/home/categs/c-audio.webp" attr="Audio">
+            <p class="categs-ul__li-link-p" attr="Audio">Audio</p>
+        </a>
+    </li>
+    <li class="categs-ul__li"><a class="categs-ul__li-link ak-purple-cake " href="/pequenos-electrodomesticos" attr="Electrohogar">
+        <img alt="Licuadora y plancha" class="categs-ul__li-link-img" src="https://media.aws.alkomprar.com/ymarketingcolcomercio/Alkosto/2024/agosto-alkosto/home/assets/c-electrohogar.webp" attr="Electrohogar">
+        <p class="categs-ul__li-link-p" attr="Electrohogar">Electrohogar</p>
+    </a>
+</li>
+<li class="categs-ul__li">
+    <a class="categs-ul__li-link ak-green-cake " href="/smartwatch/c/BI_SMAW_ALKOS" attr="Smartwatch">
+        <img alt="Reloj inteligente" class="categs-ul__li-link-img" src="https://media.aws.alkomprar.com/ymarketingcolcomercio/Alkosto/2024/agosto-alkosto/home/assets/c-smartwatch.webp" attr="Smartwatch">
+        <p class="categs-ul__li-link-p" attr="Smartwatch">Smartwatch</p>
+    </a>
+</li>
+<li class="categs-ul__li">
+    <a class="categs-ul__li-link ak-orange-cake " href="/audio/audifonos/c/BI_111_ALKOS" attr="Audífonos">
+        <img alt="Audífonos negros" class="categs-ul__li-link-img" src="https://media.aws.alkomprar.com/ymarketingcolcomercio/Alkosto/2024/home/categs/c-audifonos.webp" attr="Audífonos">
+        <p class="categs-ul__li-link-p" attr="Audífonos">Audífonos</p>
+    </a>
+</li>
+<li class="categs-ul__li">
+    <a class="categs-ul__li-link ak-blue-cake " href="/accesorios-electronica/c/BI_AELE_ALKOS" attr="Accesorios">
+        <img alt="Mouse" class="categs-ul__li-link-img" src="https://media.aws.alkomprar.com/ymarketingcolcomercio/Alkosto/2024/home/accesorios.webp" attr="Accesorios">
+        <p class="categs-ul__li-link-p" attr="Accesorios">Accesorios</p>
+    </a>
+</li>
+<li class="categs-ul__li">
+    <a class="categs-ul__li-link ak-yellow-cake " href="/camaras/c/BI_CAMA_ALKOS" attr="Cámaras">
+        <img alt="Cámara negra" class="categs-ul__li-link-img" src="https://media.aws.alkomprar.com/ymarketingcolcomercio/Alkosto/2024/agosto-alkosto/home/assets/c-camera-2.webp" attr="Cámaras">
+        <p class="categs-ul__li-link-p" attr="Cámaras">Cámaras</p>
+    </a>
+</li>
+<li class="categs-ul__li">
+    <a class="categs-ul__li-link ak-pink-cake " href="/juguetes/c/BI_JUGUE_ALKOS" attr="Juguetes">
+        <img alt="Furby" class="categs-ul__li-link-img" src="https://media.aws.alkomprar.com/ymarketingcolcomercio/Alkosto/2024/home/juguetes-2.webp" attr="Juguetes">
+        <p class="categs-ul__li-link-p" attr="Juguetes">Juguetes</p>
+    </a>
+</li>
+<li class="categs-ul__li">
+    <a class="categs-ul__li-link ak-purple-cake " href="/deportes/c/BI_DEPO_ALKOS" attr="Deportes">
+        <img alt="Bicicleta estática" class="categs-ul__li-link-img" src="https://media.aws.alkomprar.com/ymarketingcolcomercio/Alkosto/2024/agosto-alkosto/home/assets/c-deportes.webp" attr="Deportes">
+        <p class="categs-ul__li-link-p" attr="Deportes">Deportes</p>
+    </a>
+</li>
+<li class="categs-ul__li">
+    <a class="categs-ul__li-link ak-green-cake " href="/muebles/c/BI_MUEB_ALKOS" attr="Muebles">
+        <img alt="Armario" class="categs-ul__li-link-img" src="https://media.aws.alkomprar.com/ymarketingcolcomercio/Alkosto/2024/agosto-alkosto/home/assets/c-muebles.webp" attr="Muebles">
+        <p class="categs-ul__li-link-p" attr="Muebles">Muebles</p>
+    </a>
+</li>
+<li class="categs-ul__li">
+    <a class="categs-ul__li-link ak-orange-cake " href="/colchones/c/BI_COLC_ALKOS" attr="Colchones">
+        <img alt="Colchone blanco" class="categs-ul__li-link-img" src="https://media.aws.alkomprar.com/ymarketingcolcomercio/Alkosto/2024/agosto-alkosto/home/assets/c-colchones.webp" attr="Colchones">
+        <p class="categs-ul__li-link-p" attr="Colchones">Colchones</p>
+    </a>
+</li>
+<li class="categs-ul__li">
+    <a class="categs-ul__li-link ak-blue-cake " href="/llantas/c/BI_LLAN_ALKOS" attr="Llantas">
+        <img alt="Llanta negra" class="categs-ul__li-link-img" src="https://media.aws.alkomprar.com/ymarketingcolcomercio/Alkosto/2024/agosto-alkosto/home/assets/c-llantas.webp" attr="Llantas">
+        <p class="categs-ul__li-link-p" attr="Llantas">Llantas</p>
+    </a>
+</li>
+<li class="categs-ul__li">
+    <a class="categs-ul__li-link ak-yellow-cake " href="/hogar/c/BI_HOGA_ALKOS" attr="Hogar">
+        <img alt="sartenes" class="categs-ul__li-link-img" src="https://media.aws.alkomprar.com/ymarketingcolcomercio/Alkosto/2025/abril/header-foto-baterias.webp" attr="Hogar">
+        <p class="categs-ul__li-link-p" attr="Hogar">Hogar</p>
+    </a>
+</li>
+<li class="categs-ul__li">
+    <a class="categs-ul__li-link ak-pink-cake " href="/ropa-hogar/c/BI_ROHO_ALKOS" attr="Ropa hogar">
+        <img alt="Toallas blanca y café" class="categs-ul__li-link-img" src="https://media.aws.alkomprar.com/ymarketingcolcomercio/Alkosto/2025/home/ropa-hogar-2.webp" attr="Ropa hogar">
+        <p class="categs-ul__li-link-p" attr="Ropa hogar">Ropa hogar</p>
+    </a>
+</li>
+<li class="categs-ul__li">
+    <a class="categs-ul__li-link ak-purple-cake " href="/computadores-tablet/proyectores-videobeam/c/BI_121_ALKOS" attr="Proyectores">
+        <img alt="Proyector ef21" class="categs-ul__li-link-img" src="https://media.aws.alkomprar.com/ymarketingcolcomercio/Alkosto/2025/home/proyectores-2.webp" attr="Proyectores">
+        <p class="categs-ul__li-link-p" attr="Proyectores">Proyectores</p>
+    </a>
+</li>
+<li class="categs-ul__li">
+    <a class="categs-ul__li-link ak-green-cake " href="/medios-pago/c/medios-pago" attr="Ofertas con bancos">
+        <img alt="tarjetas de crédito" class="categs-ul__li-link-img" src="https://media.aws.alkomprar.com/ymarketingcolcomercio/Alkosto/2024/black/2024/medios-pago-6.webp" attr="Ofertas con bancos">
+        <p class="categs-ul__li-link-p " attr="Ofertas con bancos">Ofertas con bancos</p>
+    </a>
+</li>
+<li class="categs-ul__li">
+    <a class="categs-ul__li-link categs-ul__li-link--ofertas ak-orange-cake" href="ofertas/c/ofertas" attr="Hiperofertas">
+        <img alt="Logo con porcentaje" class="categs-ul__li-link-img" src="https://media.aws.alkomprar.com/ymarketingcolcomercio/Alkosto/2024/agosto-alkosto/home/assets/c-hiperofertas.webp" attr="Hiperofertas">
+        <p class="categs-ul__li-link-p categs-ul__li-link-p--ofertas" attr="Hiperofertas">Hiperofertas</p>
+    </a>
+</li>
+</ul>
+</div>
+</section>
+
   </header>
 
-  <!-- Banner -->
+  <!-- BANNER -->
   <section class="banner">
     <h1>Bienvenido a Alkosto Clone</h1>
     <p>Encuentra miles de productos a precios increíbles</p>
     <button class="btn">Ver Ofertas</button>
   </section>
 
-  <!-- Sección de productos -->
+  <!-- PRODUCTOS DESTACADOS -->
   <section class="productos">
     <h2>Productos Destacados</h2>
     <div class="product-grid" id="product-list">
-      <!-- Los productos se inyectan desde main.js -->
+      <p>No hay productos disponibles</p>
     </div>
   </section>
 
+  <!-- SCRIPTS -->
   <script src="js/api.js"></script>
   <script src="js/main.js"></script>
 </body>
