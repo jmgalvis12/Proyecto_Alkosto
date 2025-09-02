@@ -388,3 +388,37 @@ body {
     overflow-x: auto;
   }
 }
+
+/* Añadir al final de src/App.css */
+
+/* Pre-header */
+.preheader-events {
+  background-color: #ff3300; /* Naranja de Alkosto */
+  color: #ffffff;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 1.2em;
+  display: block;
+  text-decoration: none;
+}
+
+.text-preheader p {
+  margin: 0;
+}
+
+.only-desktop {
+  display: block;
+}
+
+.only-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .only-desktop {
+    display: none;
+  }
+  .only-mobile {
+    display: block;
+  }
+}
