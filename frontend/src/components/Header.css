@@ -1,0 +1,17 @@
+/* Header Principal - Arquitectura Modular */
+
+.header-primary {
+  position: relative;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+/* 
+NOTA: Los estilos específicos de cada componente ahora están en:
+- TopBar.css: Estilos para la barra azul superior
+- Logo.css: Estilos para el logo de Alkosto  
+- SearchBox.css: Estilos para la caja de búsqueda
+- UserNavigation.css: Estilos para navegación de usuario y carrito
+- MainHeader.css: Estilos para el contenedor principal blanco
+*/

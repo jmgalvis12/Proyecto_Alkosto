@@ -1,0 +1,92 @@
+/* Top Blue Bar Styles */
+.header-top-bar {
+  background-color: #1e4a72;
+  color: #ffffff;
+  font-size: 12px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.header-top-bar__content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header-top-nav__left,
+.header-top-nav__right {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.header-top-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+}
+
+.header-top-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.header-top-nav .icon {
+  width: 14px;
+  height: 14px;
+  stroke-width: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .header-top-nav__right {
+    gap: 12px;
+  }
+  
+  .header-top-nav a {
+    font-size: 11px;
+    padding: 3px 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-top-bar {
+    height: 28px;
+  }
+  
+  .header-top-bar__content {
+    padding: 0 16px;
+  }
+  
+  .header-top-nav__right {
+    gap: 8px;
+  }
+  
+  .header-top-nav a {
+    font-size: 10px;
+    padding: 2px 4px;
+  }
+  
+  .header-top-nav__left {
+    display: none;
+  }
+}

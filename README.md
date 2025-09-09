@@ -1,4 +1,135 @@
-# Getting Started with Create React App
+# �️ Proyecto Alkosto React - E-commerce Clone (Monorepo)
+
+Un clon funcional de la página web de Alkosto desarrollado con React, replicando la experiencia de usuario y las funcionalidades principales del e-commerce líder en Colombia. Ahora organizado en arquitectura **Monorepo** para escalabilidad y mejor organización del desarrollo.
+
+## 🎯 Características Principales
+
+- ✅ **Arquitectura Monorepo:** Frontend y backend completamente separados
+- ✅ **Header Modular:** Sistema de header dividido en 5 componentes especializados
+- ✅ **Carrito Dinámico:** Contador que se muestra solo cuando hay items
+- ✅ **Context API:** Gestión de estado global para el carrito de compras
+- ✅ **Responsive Design:** Adaptable a móviles, tablets y desktop
+- ✅ **Componentes Reutilizables:** Arquitectura modular y mantenible
+- ✅ **Footer Completo:** Con fondo negro idéntico al original
+- ✅ **Documentación Completa:** Guías técnicas y de desarrollo
+- 🔄 **En Desarrollo:** Backend API y funcionalidades adicionales
+
+## 🚀 Demo en Vivo
+
+Visita el proyecto en funcionamiento: `http://localhost:3001`
+
+## 📋 Prerrequisitos
+
+- Node.js (versión 16 o superior)
+- npm o yarn
+- Git
+
+## 🛠️ Instalación y Configuración
+
+### 1. Clonar el Repositorio
+```bash
+git clone https://github.com/jmgalvis12/Proyecto_Alkosto.git
+cd proyecto_ig
+```
+
+### 2. Configurar Frontend
+```bash
+# Navegar al frontend
+cd frontend
+
+# Instalar dependencias
+npm install
+
+# Ejecutar en desarrollo
+npm start
+```
+
+### 3. Scripts del Monorepo (desde la raíz)
+```bash
+# Instalar frontend
+npm run install:frontend
+
+# Ejecutar frontend en desarrollo
+npm run dev:frontend
+
+# Build frontend para producción
+npm run build:frontend
+
+# Ejecutar tests
+npm run test:frontend
+```
+
+El proyecto se abrirá automáticamente en `http://localhost:3000`
+
+## 🏗️ Arquitectura del Monorepo
+
+```
+proyecto_ig/
+├── 📁 frontend/              # Aplicación React
+│   ├── src/
+│   │   ├── components/       # Componentes reutilizables
+│   │   ├── views/           # Vistas/páginas principales
+│   │   ├── context/         # Contextos React (CartContext)
+│   │   ├── controllers/     # Lógica de negocio
+│   │   ├── models/          # Modelos de datos
+│   │   └── data/            # Datos estáticos
+│   ├── public/              # Archivos públicos
+│   └── package.json         # Dependencias frontend
+├── 📁 backend/              # API Backend (futuro)
+├── 📁 docs/                 # Documentación completa
+└── package.json             # Scripts del monorepo
+```
+
+## 🧩 Componentes Principales
+
+### Header Modular
+- **TopBar**: Barra superior azul con contacto e hiperofertas
+- **Logo**: Logo responsivo de Alkosto
+- **SearchBox**: Caja de búsqueda con validación
+- **UserNavigation**: Navegación usuario con carrito dinámico
+- **MainHeader**: Contenedor principal blanco
+
+### Vistas Principales
+- **CategoryNavbar**: Navegación de categorías con mega menús
+- **Hero**: Banner promocional principal
+- **BenefitsBar**: Barra de beneficios (envío, garantía, soporte)
+- **Productos**: Grid de productos con funcionalidad carrito
+- **Footer**: Footer completo con fondo negro idéntico al original
+
+## 🎨 Sistema de Diseño
+
+### Colores Alkosto
+- **Naranja Principal**: `#e95e27`
+- **Azul Corporativo**: `#003366`
+- **Fondo Negro**: `#000000`
+
+### Responsive Breakpoints
+- **Móvil**: < 768px
+- **Tablet**: 768px - 992px
+- **Desktop**: > 992px
+
+## 🔄 Gestión de Estado
+
+### CartContext
+Manejo centralizado del carrito de compras:
+
+```javascript
+const { cartItems, cartItemCount, addToCart, removeFromCart } = useCart();
+```
+
+**Funciones disponibles:**
+- `addToCart(product)` - Agregar producto
+- `removeFromCart(productId)` - Eliminar producto
+- `updateQuantity(productId, quantity)` - Actualizar cantidad
+- `clearCart()` - Limpiar carrito
+- `getCartTotal()` - Calcular total
+
+## 📱 Características Responsive
+
+- **Header compacto** en móviles
+- **Menús colapsables** para navegación
+- **Grid adaptable** de productos
+- **Footer con acordeones** en dispositivos pequeños
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

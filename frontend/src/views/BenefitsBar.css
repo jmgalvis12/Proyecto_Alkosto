@@ -1,0 +1,87 @@
+/* Benefits Bar Styles - Diseño simple horizontal como en la imagen */
+
+.benefits-bar {
+  background: #ffffff;
+  padding: 20px 0;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.benefits-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.benefits-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #333333;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.benefit-item:hover {
+  background-color: #f8f9fa;
+  transform: translateY(-2px);
+}
+
+.benefit-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.benefit-text {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .benefits-list {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  
+  .benefit-item {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .benefits-container {
+    padding: 0 16px;
+  }
+  
+  .benefits-list {
+    gap: 12px;
+  }
+  
+  .benefit-icon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .benefit-text {
+    font-size: 13px;
+  }
+}

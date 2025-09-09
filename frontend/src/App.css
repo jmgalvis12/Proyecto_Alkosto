@@ -1,0 +1,184 @@
+/* --- Estilos Globales --- */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Estilos del Header --- */
+.header-primary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-primary__center {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.header-primary__logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.header-primary__support ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.header-primary__support ul li a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.header-primary__search {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.header-primary__search .input-group {
+    position: relative;
+    width: 100%;
+}
+
+.header-primary__search .form-control {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+}
+
+.header-primary__search .algoliaAutocompleteSearch__searchIcon--desktop {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.header-primary__navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.header-primary__navigation ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.header-primary__navigation .counter {
+    background-color: #e3000f;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.7rem;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
+/* --- Estilos de la Cuadrícula de Categorías --- */
+
+.home-sect {
+    padding: 20px 0;
+}
+
+.home-sect--no-pad {
+    padding: 0;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.scrolling {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.overflow-box {
+    display: inline-block;
+}
+
+.categs-ul {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+
+.categs-ul__li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.categs-ul__li-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100px;
+    transition: transform 0.3s ease;
+}
+
+.categs-ul__li-link:hover {
+    transform: translateY(-5px);
+}
+
+.categs-ul__li-link-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.categs-ul__li-link-p {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Clases de colores de fondo para los círculos de categorías */
+.ak-blue-cake { background-color: #e5f1ff; }
+.ak-yellow-cake { background-color: #fff9e6; }
+.ak-pink-cake { background-color: #ffe6f2; }
+.ak-green-cake { background-color: #e6fff1; }
+.ak-purple-cake { background-color: #f2e6ff; }
+.ak-orange-cake { background-color: #fff2e6; }
