@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # �️ Proyecto Alkosto React - E-commerce Clone (Monorepo)
 
 Un clon funcional de la página web de Alkosto desarrollado con React, replicando la experiencia de usuario y las funcionalidades principales del e-commerce líder en Colombia. Ahora organizado en arquitectura **Monorepo** para escalabilidad y mejor organización del desarrollo.
@@ -130,6 +131,9 @@ const { cartItems, cartItemCount, addToCart, removeFromCart } = useCart();
 - **Menús colapsables** para navegación
 - **Grid adaptable** de productos
 - **Footer con acordeones** en dispositivos pequeños
+=======
+# Getting Started with Create React App
+>>>>>>> 40eab90 (Actualización del backend Django con modelos para usuarios, productos, carrito, pedidos y analíticas)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

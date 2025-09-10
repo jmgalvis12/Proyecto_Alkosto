@@ -1,4 +1,5 @@
 """
+<<<<<<< HEAD
 URL configuration for config project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -29,3 +30,37 @@ urlpatterns = [
 if settings.DEBUG:
     import debug_toolbar
     urlpatterns = [path('__debug__/', include(debug_toolbar.urls))] + urlpatterns
+=======
+Configuración de URLs principal del proyecto.
+Incluye:
+- URLs del panel de administración de Django
+- Inclusiones de URLs de las diferentes aplicaciones
+- Configuración para servir archivos estáticos y media en desarrollo
+"""
+
+from django.contrib import admin
+from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
+from django.shortcuts import render
+
+urlpatterns = [
+    # Panel de administración de Django
+    path('admin/', admin.site.urls),
+    
+    # URLs de aplicaciones
+    path('accounts/', include('apps.accounts.urls')),  # Auth y gestión de usuarios
+    path('products/', include('apps.products.urls')),  # Catálogo de productos
+    
+    # Comentar temporalmente las que aún no están listas
+    # path('cart/', include('apps.cart.urls')),
+    # path('orders/', include('apps.orders.urls')),
+]
+
+# Configuración para servir archivos estáticos y media en desarrollo
+if settings.DEBUG:
+    # Sirve archivos estáticos en desarrollo
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    # Sirve archivos multimedia en desarrollo
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+>>>>>>> 40eab90 (Actualización del backend Django con modelos para usuarios, productos, carrito, pedidos y analíticas)

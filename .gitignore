@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Monorepo Alkosto - Archivo .gitignore
 
 # Dependencies
@@ -21,10 +22,28 @@ backend/coverage/
 
 # Environment variables
 .env
+=======
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+>>>>>>> 40eab90 (Actualización del backend Django con modelos para usuarios, productos, carrito, pedidos y analíticas)
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+<<<<<<< HEAD
 frontend/.env*
 backend/.env*
 
@@ -135,3 +154,32 @@ pip-delete-this-directory.txt
 # Temporary files
 *.tmp
 *.temp
+=======
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Backend - Django specific
+/backend/venv/
+/backend/db.sqlite3
+/backend/__pycache__/
+/backend/media/
+/backend/staticfiles/
+/backend/**/__pycache__/
+/backend/**/*.py[cod]
+/backend/**/*.so
+/backend/**/*.log
+/backend/local_settings.py
+
+# Frontend
+/frontend/node_modules/
+/frontend/build/
+
+# Global
+.env
+.idea/
+.vscode/
+*.swp
+*.swo
+>>>>>>> 40eab90 (Actualización del backend Django con modelos para usuarios, productos, carrito, pedidos y analíticas)
